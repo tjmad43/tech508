@@ -26,3 +26,5 @@
 - `git commit -m "commit message"` to commit. Message can be something like "change readme", present tense is standard
 
 Note: remove `.git` folder to uninitialise. All version control & commit history would be removed.
+
+Note: have to use `git config` options to log in before committing.

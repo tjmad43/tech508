@@ -25,6 +25,11 @@
 - `git add .` to add all in current folder/directory to staging area
 - `git commit -m "commit message"` to commit. Message can be something like "change readme", present tense is standard
 
-Note: remove `.git` folder to uninitialise. All version control & commit history would be removed.
-
-Note: have to use `git config` options to log in before committing.
+### Further notes:
+- remove `.git` folder to uninitialise. All version control & commit history would be removed
+- have to use `git config` options to log in before committing
+- `git log` to see commit history
+- `git diff` to see difference between 
+- `git branch` to see branch
+- `git checkout [commit ID]` to temporarily turn file/folder back to that commit for viewing
+- `git checkout [branch name]` to go back. Branch name, usually main, goes to latest commit on that branch

@@ -1,7 +1,7 @@
 
 
 name = input("What is your name? ")
-age =  input("What is your age? ")
+age =  int(input("What is your age? "))
 month = input("What month were you born? ")
 year = input("What year were you born? ")
 print(f'Hi {name}, {age}')

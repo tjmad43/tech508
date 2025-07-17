@@ -31,7 +31,7 @@ bday = datetime.datetime(birth_year, month, day)
 days_delta = today - bday
 hours = days_delta.days * 24
 
-print(f'You have lived {hours} hours!')
+print(f'You have lived {hours:.0f} hours!')
 
 
 

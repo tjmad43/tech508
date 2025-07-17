@@ -23,5 +23,5 @@ print(shopping_list)
 shopping_list.remove("bananas")
 print(shopping_list)
 
-shopping_list.pop(-1)
+shopping_list.pop()
 print(shopping_list)

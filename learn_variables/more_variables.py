@@ -59,6 +59,6 @@ print(f'You scored {score_as_decimal}')
 # Use an f-string to print 'score_as_decimal' formatted as a percentage e.g. 'You scored 61.538462%'
 print(f'You scored {score_as_decimal * 100:5f}%')
 # Use an f-string to print 'score_as_decimal' formatted as a percentage to rounded to 2 decimal places e.g. 'You scored 61.54%'
-print(f'You scored {score_as_decimal * 100:.2f}%')
+print(f'You scored {score_as_decimal:.2%}')
 # Use an f-string to print 'score_as_decimal' formatted as a percentage to rounded to a whole number e.g. 'You scored 62%'
-print(f'You scored {score_as_decimal * 100:.0f}%')
+print(f'You scored {score_as_decimal:.0%}')

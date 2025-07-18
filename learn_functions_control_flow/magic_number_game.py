@@ -38,8 +38,9 @@ while not game_end:
         # Let the user know if the response was correct or not
         if int(guess) == magic_number:
             print("Congratulations, you guessed the magic number!")
-            print(f'You guessed in {5-guesses} guesses!')
+            print(f'You guessed in {6-guesses} guesses!')
             game_end = True
+            break
         elif int(guess) > magic_number:
             guesses -= 1
             print("Too high, try again.")
@@ -48,8 +49,9 @@ while not game_end:
             guesses -= 1
             print("Too low, try again.")
             print(f'You have {guesses} guesses left!')
-    print("Sorry, you ran out of guesses!")
-    print(f'The magic number was {magic_number}')
+    if guesses == 0:
+        print("Sorry, you ran out of guesses!")
+        print(f'The magic number was {magic_number}')
     game_end = True
 
 

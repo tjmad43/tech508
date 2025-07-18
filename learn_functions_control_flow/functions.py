@@ -24,7 +24,7 @@ def addition(int1=2, int2=2):
 
 num1 = 3
 num2 = 3
-print(addition(4, 4))
+print(addition(num1, num2))
 
 
 # 6. Any number of arguments

@@ -10,6 +10,8 @@
 ## How do we get a script to run from the command line?
 - sys module
   - helps us get arguments from the command line
+  - sys.argv
+  - first argument [0] is the name of the python file, [1]+ are arguments
 
 ```cmd
 python script.py arg1 arg2 arg3

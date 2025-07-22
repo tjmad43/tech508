@@ -35,5 +35,6 @@ def get_stats(choice):
                     'hp': pokemon_data["stats"][0]['base_stat'],
                     'attack': pokemon_data["stats"][1]["base_stat"],
                     'defense': pokemon_data["stats"][2]["base_stat"],
+                    'moves': pokemon_data["moves"]
                     }
     return pokemon_info

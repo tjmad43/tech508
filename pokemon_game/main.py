@@ -3,6 +3,7 @@ import json
 
 import random_pokemon
 import poke_stats
+import poke_battle
 
 # Get the list of pokemon from the API
 url = 'https://pokeapi.co/api/v2/pokemon/'
@@ -36,6 +37,7 @@ while not good_input:
     else:
         print('Invalid input. Try again.')
 
+print('')
 print(f'Your pokemon is {choice}')
 
 # Print the pokemon's stats
@@ -50,3 +52,6 @@ print(f'Your opponent has chosen {cpu}')
 # And print it's stats
 cpu_stats = poke_stats.get_stats(cpu)
 
+
+#winner = poke_battle.battle(user_stats, cpu_stats)
+#print(f'{winner} won the battle!')

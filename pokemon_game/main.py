@@ -12,6 +12,8 @@ pokemon_list = json.loads(response.text)['results']
 for pokemon in pokemon_list:
     print(pokemon['name'])
 
+
+# Ask user if they want to choose or be assigned randomly
 good_input = False
 while not good_input:
 
@@ -39,10 +41,12 @@ print(f'Your pokemon is {choice}')
 # Print the pokemon's stats
 user_stats = poke_stats.get_stats(choice)
 
+
 # Get a random pokemon for the CPU
 cpu = random_pokemon.random_choice()
 print('')
 print(f'Your opponent has chosen {cpu}')
+
 # And print it's stats
 cpu_stats = poke_stats.get_stats(cpu)
 

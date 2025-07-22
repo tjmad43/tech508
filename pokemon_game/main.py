@@ -12,17 +12,37 @@ pokemon_list = json.loads(response.text)['results']
 for pokemon in pokemon_list:
     print(pokemon['name'])
 
-# Ask the user to choose a pokemon
-print('Enter your pokemon:')
+good_input = False
+while not good_input:
 
-# Get the user's choice
-choice = input().lower()
-print(type(choice))
+    print('Do you want to choose a pokemon or get a random pokemon? (Type "choose" or "random")')
+    user_choice = input()
 
+    if user_choice.lower() == 'choose':
+        good_input = True
+        # Ask the user to choose a pokemon
+        print('Enter your pokemon:')
+
+        # Get the user's choice
+        choice = input().lower()
+
+    elif user_choice.lower() == 'random':
+        good_input = True
+
+        choice = random_pokemon.random_choice()
+
+    else:
+        print('Invalid input. Try again.')
+
+print(f'Your pokemon is {choice}')
+
+# Print the pokemon's stats
 poke_stats.get_stats(choice)
 
+# Get a random pokemon for the CPU
 cpu = random_pokemon.random_choice()
 print('')
 print(f'Your opponent has chosen {cpu}')
-
+# And print it's stats
 poke_stats.get_stats(cpu)
+

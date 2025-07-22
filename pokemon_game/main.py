@@ -20,3 +20,9 @@ choice = input().lower()
 print(type(choice))
 
 poke_stats.get_stats(choice)
+
+cpu = random_pokemon.random_choice()
+print('')
+print(f'Your opponent has chosen {cpu}')
+
+poke_stats.get_stats(cpu)

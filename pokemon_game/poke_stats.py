@@ -23,3 +23,17 @@ def get_stats(choice):
     print('Weight: {}'.format(weight_formatted) + "(kgs)")
     print('Height: {}'.format(height_formatted) + "(m)")
     print('Ability: {}'.format(ability['name']))
+
+    print(f'HP: {pokemon_data["stats"][0]['base_stat']}')
+    print(f'Attack: {pokemon_data["stats"][1]["base_stat"]}')
+    print(f'Defense: {pokemon_data["stats"][2]["base_stat"]}')
+
+    pokemon_info = {'name': pokemon_data['name'],
+                    'weight': weight_formatted,
+                    'height': height_formatted,
+                    'ability': ability['name'],
+                    'hp': pokemon_data["stats"][0]['base_stat'],
+                    'attack': pokemon_data["stats"][1]["base_stat"],
+                    'defense': pokemon_data["stats"][2]["base_stat"],
+                    }
+    return pokemon_info

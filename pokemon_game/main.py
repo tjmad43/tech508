@@ -37,12 +37,12 @@ while not good_input:
 print(f'Your pokemon is {choice}')
 
 # Print the pokemon's stats
-poke_stats.get_stats(choice)
+user_stats = poke_stats.get_stats(choice)
 
 # Get a random pokemon for the CPU
 cpu = random_pokemon.random_choice()
 print('')
 print(f'Your opponent has chosen {cpu}')
 # And print it's stats
-poke_stats.get_stats(cpu)
+cpu_stats = poke_stats.get_stats(cpu)
 

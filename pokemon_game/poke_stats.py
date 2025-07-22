@@ -1,7 +1,7 @@
 import json
 import requests
 
-def poke_stats(choice):
+def get_stats(choice):
     # Get the pokemon's data from the API
     url = 'https://pokeapi.co/api/v2/pokemon/{}/'.format(choice)
     response = requests.get(url)

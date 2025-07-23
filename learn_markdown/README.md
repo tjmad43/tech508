@@ -55,7 +55,7 @@ Use numbered lists when sequence is important
 
 ## Images
 
-![cat](../images/cat.jpg)
+![cat](images/cat.jpg)
 
 ## Links
 

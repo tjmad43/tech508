@@ -12,7 +12,10 @@ def battle(pokemon1, pokemon2):
 
         #battle logic - figure out moves
 
-
+        # user picks move from list
+        # cpu move is picked randomly
+        # calculate hp lost from strength of move and attack stat of pokemon
+        #subtract from other pokemon's hp
 
         # Next turn
         turn += 1

@@ -28,6 +28,7 @@ def get_stats(choice):
     print(f'Attack: {pokemon_data["stats"][1]["base_stat"]}')
     print(f'Defense: {pokemon_data["stats"][2]["base_stat"]}')
 
+    # Put stats into a smaller dictionary with most relevant info
     pokemon_info = {'name': pokemon_data['name'],
                     'weight': weight_formatted,
                     'height': height_formatted,

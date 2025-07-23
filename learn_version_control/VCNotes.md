@@ -34,3 +34,6 @@
 - `git checkout [commit ID]` to temporarily turn file/folder back to that commit for viewing
 - `git checkout [branch name]` to go back. Branch name, usually main, goes to latest commit on that branch
 - `git reset` to undo commit. Hard and soft versions, soft means changes aren't lost and you have the chance to recommit
+
+### Linking to remote repo
+![git add to repo](git_instructions.png)
